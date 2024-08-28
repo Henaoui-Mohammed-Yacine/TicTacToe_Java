@@ -15,5 +15,7 @@ Here's a Java object-oriented project: a Tic Tac Toe game.
 
 ![image7](images/g6.PNG)
 
+![image8](images/g7.PNG)
+
 
 
