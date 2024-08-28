@@ -25,7 +25,7 @@ public class TicTacToe {
         for(;;){
         System.out.println("turn of "+current_player.getName());
         System.out.println("enter place of your symbol:");
-        System.out.println("enter ligne(1->3):");
+        System.out.println("enter line(1->3):");
         ligne=scanner.nextInt()-1;
         System.out.println("enter column(1->3):");
         column=scanner.nextInt()-1;
@@ -37,12 +37,12 @@ public class TicTacToe {
         b.getCase(ligne, column).setCaractere(current_player.getSymbol());
         game.b.afficherBoard();
         if(game.b.verifierGagne()){
-            System.out.println("Bravo "+current_player.getName()+" you are Win");
+            System.out.println("Well done "+current_player.getName()+" you are Win");
             game.restartGame();
             continue;
         }
         else if(game.b.verifierEgaliteJeux()){
-            System.out.println("Cette partie est null pour les deux joueurs");
+            System.out.println("This game is a draw for both players.");
             game.restartGame();
             continue;
         }
